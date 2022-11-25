@@ -11,5 +11,5 @@ public class ProductoNoPerecible extends Producto {
 	public void setTipoProducto(String tipoProducto) {
 		this.tipoProducto = tipoProducto;
 	}
-
+	
 }

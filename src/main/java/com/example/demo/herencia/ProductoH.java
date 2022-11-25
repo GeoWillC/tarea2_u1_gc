@@ -1,11 +1,15 @@
-package com.example.demo.tradicional;
+package com.example.demo.herencia;
 
-public class Producto {
+public class ProductoH {
 	private String nombre;
 	private int stock;
 	private String id;
 	private double precioUnidad;
 
+	public String tipoMantenimiento() {
+		String mantenimiento="No requiere mantenimiento";
+		return  mantenimiento;
+	}
 	@Override
 	public String toString() {
 		return "Producto [nombre=" + nombre + ", stock=" + stock + ", id=" + id + ", precioUnidad=" + precioUnidad + "]";

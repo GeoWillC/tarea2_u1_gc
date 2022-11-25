@@ -25,8 +25,8 @@ public class RegistroOperaciones {
 			productoNP.setStock(stock);
 			productoNP.setId(id);
 			productoNP.setPrecioUnidad(precio);
-			productoNP.setEstado("NP");
 			productoNP.setTipoProducto("Enlatado");
+			System.out.println("Este producto no requiere refrigeracion");
 			this.producto = productoNP;
 		} else {
 			ProductoPerecible productoP = new ProductoPerecible();
@@ -34,8 +34,8 @@ public class RegistroOperaciones {
 			productoP.setStock(stock);
 			productoP.setId(id);
 			productoP.setPrecioUnidad(precio);
-			productoP.setEstado("P");
 			productoP.setCaducidad(fechaCaducidad);
+			System.out.println("Es imperativo que este producto se refrigere");
 			this.producto = productoP;
 		}
 		this.agregadoInventario(this);
